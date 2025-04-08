@@ -56,9 +56,9 @@ ________________________________________________________________________________
 # Scenario:
 
   - Start Button: Pressing the Start button activates the Bases Conveyor, and a base part is moved.
-  - Base at Place Sensor: When the base part passes the sensor, the Bases Conveyor stops, and the Clamp Base starts to hold the part.
+  - Base at Place Sensor: When the base part passes the sensor, the Base Conveyor stops, and the Clamp Base starts to hold the part.
   - Lids Conveyor: When the base is clamped, the Lids Conveyor starts, and the lid part is moved.
-  - Lid at Place Sensor: When the lid part passes the sensor, the Lids Conveyor stops, and the Clamp Lid starts.
+  - Lid at Place Sensor: When the lid part passes the sensor, the Lid Conveyor stops, and the Clamp Lid starts.
   - Move Z: When the lid is clamped, the Move Z function is triggered.
   - Item Detected Sensor: Once detected, the Grab function holds the part, and the Clamp Lid releases the part.
   - Move Z Stops: When the part is released, the Move Z stops, and the robot returns to the neutral Z position.
@@ -70,7 +70,8 @@ ________________________________________________________________________________
   - Display: The display shows the number of completed assemblies.
 # Video:
 https://github.com/user-attachments/assets/b8801593-4310-4dbf-bb80-501da23dc2fd
-
-
+________________________________________________________________________________________________
+# Physical Implementation of the Assembler System
+https://github.com/user-attachments/assets/d5bcca10-0a98-47fa-8b37-f1dfe9467872
 
 
