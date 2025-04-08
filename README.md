@@ -20,45 +20,55 @@ ________________________________________________________________________________
 https://github.com/user-attachments/assets/efbe4fcb-cfb5-489f-bcef-619759444836
 ________________________________________________________________________________________________
 
+
 # Lap2 – Conveyor Sorting System with Vision Sensor
 # Scenario:
-  - All buttons turn on the lights (Lights subroutine).
-
+  - All buttons turn on the lights.
   - Pressing the Start button starts the Entry conveyor, feeding Blue Lid, Base, or Raw materials from the feeder.
-
     - Configure the Emitter to only feed blue products.
-
   - The Vision sensor detects the product and writes values to INT_IN_0:
-
     - Lid = 1, Base = 2, Raw = 3.
-
   - Based on the product type:
-
     - Lid → Sorter 1 turns on.
-
     - Base → Sorter 2 turns on.
-
     - Raw → Sorter 3 turns on.
-
     - The product waits 5 seconds before moving.
-
-  - After 5 seconds, both the Entry conveyor and Exit conveyor start.
-
+  - After 5 seconds, both the Entry conveyor and the Exit conveyor start.
   - When the product reaches the exit area, the sorter stops, and the corresponding counter updates:
-
     - Lid → Counter 1
-
     - Base → Counter 2
-
     - Raw → Counter 3
-
   - The system waits for Start to restart.
-
   - Pressing Reset resets all outputs and counters.
-# Ladder Diagram
+# Ladder Diagram:
 ![image](https://github.com/user-attachments/assets/decc08c5-279a-49e1-acb7-883c094358d8)
-# Video
+# Video:
 https://github.com/user-attachments/assets/0d2f0e1c-6d91-430d-b361-7356c83febea
+________________________________________________________________________________________________
+
+
+# Lap3 - Pick And Place
+# Scenario:
+  - Start State: When the system is in the start position, pressing the Start button activates the Entry Conveyor.
+
+  - When the Item at Entry sensor detects the item, the Entry Conveyor stops, and the robot moves along the Z-axis (Move Z).
+
+  - Once the Item Detected sensor sees the item, the robot grabs it and moves back to the neutral Z position.
+
+  - When the robot's Z-axis stops moving, it begins moving along the X-axis.
+
+  - After the X-axis stops, the robot moves along the Z-axis.
+
+  - When the Item at Exit sensor detects the item, the robot releases the grab and returns to the neutral Z position.
+
+  - The Exit Conveyor starts once the robot reaches the neutral position, and the robot returns to its neutral X position.
+# Ladder Diagram:
+![image](https://github.com/user-attachments/assets/1c646e4d-21a4-4a51-bda6-5b2bd67fb805)
+
+# Video:
+https://github.com/user-attachments/assets/6602f677-45f2-46f8-9a84-763147fbc0d5
+
+
 
 
 
