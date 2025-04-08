@@ -14,3 +14,10 @@ ________________________________________________________________________________
   - After the Filling sensor indicates that the tank is full and drops to 0, the system waits 10 seconds, then opens the Discharge Valve for 5 seconds to empty the tank.
 
   - If the Discharge button is pressed at any time, the Discharge Valve opens for 10 seconds, overriding the regular sequence.
+
+##Video
+
+https://github.com/user-attachments/assets/efbe4fcb-cfb5-489f-bcef-619759444836
+________________________________________________________________________________________________
+
+
